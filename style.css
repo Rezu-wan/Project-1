@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+p {
+    font-family: "Outfit", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* hero-s */
+.hero-section {
+    display: flex;
+}
+
+.left-side {
+    background-color: #000;
+    height: 100vh;
+    width: 32%;
+    position: relative;
+}
+
+.left-side h1 {
+    color: #fff;
+    /* color: #000; */
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 88px;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    mix-blend-mode: difference;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.img-container {
+    height: 100vh;
+    aspect-ratio: 0.675/1;
+    /* aspect-ratio: 1/1.48; */
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.right-side {
+    width: 68%;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+.hero-content p {
+    width: 350px;
+    margin-bottom: 64px;
+    color: #444444;
+}
+
+.hero-content a,
+.schedule a {
+    display: flex;
+    align-items: center;
+}
+
+.hero-content a span,
+.schedule a span {
+
+    /* extra-code-1-s */
+    transition: all 500ms;
+    /* extra-code-1-e */
+
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.hero-content a span.text {
+    background-color: #151515;
+    padding: 24px 32px;
+}
+
+.hero-content a>span.icon {
+    background-color: #D5966C;
+    padding: 24px;
+}
+
+/* hero-e */
+
+.container {
+    margin: 15% 12%;
+}
+
+/* galley-section-s */
+.galley {
+    margin-bottom: 15%;
+}
+
+.gallery-upper {
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+.gallery-top-left h2 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+}
+
+.gallery-top-left p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.gallery-1-img img {
+    width: 100%;
+    aspect-ratio: 1.5875/1;
+}
+
+.gallery-lower {
+    display: flex;
+    gap: 30px;
+    /* align-items: center; */
+}
+
+.gallery-2-img img {
+    width: 100%;
+    height: 100%;
+    /* aspect-ratio: 0.88/1; */
+    object-fit: cover;
+}
+
+.gallery-3-img {
+    margin-bottom: 30px;
+}
+
+.gallery-3-img img {
+    width: 100%;
+    aspect-ratio: 1.42/1;
+}
+
+.gallery-lower-right {
+    background-color: #000;
+    padding: 64px 48px;
+    color: #fff;
+}
+
+.gallery-lower-right h2 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+}
+
+.gallery-lower-right p {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+/* galley-section-e */
+
+/* schedule-s */
+.schedule {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 95px 72px;
+    border-radius: 15px;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.schedule-content h2 {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.schedule-content p {
+    font-size: 20px;
+    line-height: 26px;
+    width: 459px;
+}
+
+.schedule a span.text {
+    background-color: #D5966C;
+    padding: 24px 32px;
+}
+
+.schedule a>span.icon {
+    background-color: #F2F2F2;
+    padding: 24px;
+    color: #D5966C;
+}
+
+/* schedule-e */
+
+/* footer-s */
+footer {
+    background-color: #D5966C;
+    display: flex;
+    padding: 80px 12%;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    gap: 140px;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: 100%;
+    aspect-ratio: 2.76/1;
+}
+
+.footer-content p {
+    width: 430px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* updated-code than class-video from here */
+.social-medias {
+    display: flex;
+    gap: 20px;
+}
+
+.social-medias a {
+    color: #151515;
+    font-size: 24px;
+
+    /* extra-code-2-s */
+    transition: all 300ms;
+    /* extra-code-2-e */
+}
+
+.social-medias a:hover {
+    color: #fff;
+}
+
+/* footer-e */
+
+/* extra-3-s */
+.hero-content a:hover span.text {
+    background-color: #D5966C;
+}
+
+.hero-content a:hover span.icon {
+    background-color: #000;
+}
+
+.schedule a:hover span.text {
+    background-color: #fff;
+    color: #D5966C;
+}
+
+.schedule a:hover span.icon {
+    background-color: #D5966C;
+    color: #fff;
+}
+
+/* extra-3-e */
